@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import image from "../assets/Vector.png";
+import image1 from "../assets/Vector1.png";
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -32,52 +34,49 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-white py-12 w-full h-[889px] flex justify-center items-center">
-      <div className="w-[1290px] h-[779px] flex py-[82px] gap-[73px] flex-col">
+    <div className="bg-[#F8F8F8] px-[92px] py-[44px] w-full h-[867px] flex justify-center items-center">
+      <div className="h-[779px] flex py-[82px] gap-[73px] flex-col">
         <div>
-          {" "}
-          <h2 className="text-[64px] font-bold text-center">
+          <h2 className="text-[64px] font-bold font-raleway text-center">
             Frequently Asked{" "}
             <span className="text-[#214A3E] italic">Questions</span>
           </h2>
-          <p className="text-center mb-8 text-[20px]">
+          <p className="text-center font-raleway  text-[#214A3E] text-[20px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
             beatae error laborum.
           </p>
         </div>
-        <div className="w-[852px] mx-auto px-4   ">
+        <div className="w-[852px]">
           <ul className="text-[#214A3E]">
             {questions.map((question, index) => (
               <li key={index}>
                 <div
-                  className="flex justify-between items-center cursor-pointer border-t border-gray-300 py-[24px]"
+                  className={`flex font-raleway justify-between items-left flex-col cursor-pointer border-t border-b border-gray-300 py-[24px] ${
+                    activeIndex === index ? "gap-[20px]" : ""
+                  }`}
                   onClick={() => handleClick(index)}
                 >
-                  <h3 className="text-lg font-medium">
-                    {index + 1}. {question.title}
-                  </h3>
-                  <svg
-                    className="w-6 h-6 text-gray-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </div>
-                {activeIndex === index && (
-                  <div className="mb-[24px] leading-[28px]">
-                    <p className="text-gray-700 text-[18px] ">
-                      {question.answer}
-                    </p>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-[22px] font-bold w-[796px]">
+                      {index + 1}. {question.title}
+                    </h3>
+                    <div>
+                      <img
+                        src={activeIndex === index ? image1 : image}
+                        className=""
+                      />
+                    </div>
                   </div>
-                )}
+                  <div>
+                    {activeIndex === index && (
+                      <div className="leading-[28px]">
+                        <p className="text-[#214A3E] font-medium text-[18px]">
+                          {question.answer}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
               </li>
             ))}
           </ul>

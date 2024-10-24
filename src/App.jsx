@@ -15,17 +15,17 @@ import Collection from "./components/Collection";
 
 function App() {
   return (
-    <div className="w-[100%] bg-blue-900 h-[20px]">
+    <div className="w-[100%]">
       <Navbar />
       <HeroSection />
-      {/* <Collection /> */}
-      {/* <Texture /> */}
+      <Collection />
+      <Texture />
       <NewArrivalsSection />
-      {/* <CraftsSection />
-      <TestimonialSection /> */}
-      <ContactUs />
-      <FAQSection />
-      <Footer />
+      {/* <CraftsSection /> */}
+      {/* <TestimonialSection /> */}
+      {/* <ContactUs /> */}
+      {/* <FAQSection /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,23 +1,43 @@
 import React from "react";
+import image from "../assets/LOGO.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#223f35] px-[81px] flex justify-between items-center h-[90px] w-full min-w-[1440px]">
+    <nav className="bg-[#214A3E] flex justify-center items-center h-[90px] w-[100%]  ">
       {/* Logo */}
-      <div className="text-[#ece6d1] font-serif text-xl">cementotime</div>
+      <div className="flex justify-between w-[100%] items-center w-[90%]">
+        <img src={image} className=" h-[21px]" />
 
-      {/* Navigation Links */}
-      <ul className="flex justify-between items-center w-[467px]">
-        <li className="bg-[#556f64] cursor-pointer text-white w-[122px] h-[38px] rounded-full text-[20px] text-center" >Home</li>
-        <li className="text-white cursor-pointer text-[20px]">About</li>
-        <li className=" text-white cursor-pointer text-[20px]">Products</li>
-        <li className=" text-white cursor-pointer text-[20px]">Contact Us</li>
-      </ul>
+        
+        <ul className="flex justify-between font-raleway max-w-[42.97%] hidden 1350px:flex">
+          <div className="px-[28px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer rounded-full text-center">
+            <li className="text-white cursor-pointer text-[20px] text-center">
+              Home
+            </li>
+          </div>
+          <div className="px-[28px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer rounded-full text-center">
+            <li className="text-white cursor-pointer text-[20px]">About</li>
+          </div>
+          <div className="px-[28px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer rounded-full text-center">
+            <li className=" text-white cursor-pointer text-[20px]">Products</li>
+          </div>
+          <div className="px-[28px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer rounded-full text-center">
+            <li className=" text-white cursor-pointer text-[20px]">
+              Contact Us
+            </li>
+          </div>
+        </ul>
 
-      {/* Explore Button */}
-      <button className="bg-[#10251F] w-[184px] h-[56px] flex justify-center items-center text-[#ece6d1] px-[46px] py-[17px] rounded-[81px] text-[20px]">
-        EXPLORE
-      </button>
+        {/* Explore Button */}
+        <button className="bg-[#10251F] font-raleway 1350px:flex hidden w-[184px] h-[56px] flex justify-center items-center text-[#ece6d1] px-[46px] py-[17px] rounded-[81px] text-[24px] leading-[120%]">
+          EXPLORE
+        </button>
+        <div class="flex flex-col space-y-1 1350px:hidden">
+          <span class="block w-8 h-1 bg-white"></span>
+          <span class="block w-8 h-1 bg-white"></span>
+          <span class="block w-8 h-1 bg-white"></span>
+        </div>
+      </div>
     </nav>
   );
 };
