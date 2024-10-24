@@ -18,11 +18,11 @@ function App() {
     <div className="w-[100%] bg-blue-900 h-[20px]">
       <Navbar />
       <HeroSection />
-      <Collection />
-      <Texture />
+      {/* <Collection /> */}
+      {/* <Texture /> */}
       <NewArrivalsSection />
-      <CraftsSection />
-      <TestimonialSection />
+      {/* <CraftsSection />
+      <TestimonialSection /> */}
       <ContactUs />
       <FAQSection />
       <Footer />
