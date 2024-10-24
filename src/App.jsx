@@ -10,23 +10,22 @@ import FAQSection from "./components/FAQSection";
 import CraftsSection from "./components/CraftsSection";
 import Texture from "./components/Texture";
 import Footer from "./components/Footer";
-import ContactUs from "./components/Contactus";
+import ContactUs from "./components/ContactUs";
 import Collection from "./components/Collection";
 
 function App() {
-
   return (
     <div className="w-[100%] bg-blue-900 h-[20px]">
-       <Navbar />
-    <HeroSection /> 
-          <Collection />
+      <Navbar />
+      <HeroSection />
+      <Collection />
       <Texture />
       <NewArrivalsSection />
       <CraftsSection />
       <TestimonialSection />
       <ContactUs />
       <FAQSection />
-      <Footer />  
+      <Footer />
     </div>
   );
 }
