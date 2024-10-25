@@ -2,10 +2,13 @@ import React from "react";
 import image from "../assets/rectangle.png";
 const NewArrivalsSection = () => {
   return (
-    <section
-      className="relative bg-cover bg-center h-[615px] flex items-center justify-start px-[260px] py-[98px] w-full max-md:px-[100px]"
-      style={{ backgroundImage: `url(${image})` }}
-    >
+  
+     <section
+    className="relative h-[615px] flex items-start justify-start px-[260px] py-[98px] w-full max-md:px-[100px] max-sm:px-[35px] bg-center"
+    style={{
+      backgroundImage: `url(${image})`, }}
+  > 
+  
       {/* Overlay */}
       {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
 
@@ -32,7 +35,8 @@ const NewArrivalsSection = () => {
           </span>
         </button>
       </div>
-    </section>
+      </section>
+      
   );
 };
 

@@ -11,7 +11,7 @@ const Collection = () => {
       {/* <div className="w-full h-[520px] flex items-center flex-row justify-end  gap-[93px] max-md:flex-col"> */}
       <div className="w-full h-full flex items-center flex-row justify-end  gap-[93px] max-md:flex-col max-md:justify-center max-md:items-end">
         {/* Left Content */}
-        <div className="w-[100%] max-w-[557px] flex flex-col gap-[36px]  max-md:pr-[50px] max-sm:w-[368px]">
+        <div className="w-[100%] max-w-[667px] flex flex-col gap-[36px]  max-md:pr-[50px] max-sm:w-[368px]">
           <h1 className="text-[64px]  font-bold text-[#0000000] font-raleway  text-left leading-[120%] max-md:text-[40px] max-sm:text-[24px]">
             Elevating Spaces with{" "}
             <span className="text-[#214A3E] italic">Eco-Friendly</span> Elegance
@@ -32,47 +32,55 @@ const Collection = () => {
         </div>
 
         {/* Right Images */}
-        <div className="flex space-x-4    max-sm:space-x-[22px]">
+        <div className="flex space-x-4 h-[520px]  max-w-[723px] w-full max-sm:w-[415px] max-sm:h-[291px] max-sm:space-x-[22px]">
           {/* First Image */}
           <div
-            className={`relative flex-shrink-0 w-[49.58%] transform transition-width duration-700 ease-out max-sm:w-[197px] `}
-            // className={`relative flex-shrink-0 ${
-            //   hovered === "second" || hovered === "third"
-            //     ? "w-[156px]"
-            //     : "w-[49.58%]"
-            // } transform transition-width duration-700 ease-out max-sm:w-[197px] `}
+            // className={`relative flex-shrink-0 w-[49.58%] transform transition-width duration-700 ease-out max-sm:w-[197px] `}
+            className={`relative flex-shrink-0 ${
+              hovered === "second" || hovered === "third"
+                ? "w-[156px]"
+                : "w-[48.41%]"
+            } transform transition-width rounded-[20px] duration-700 ease-out max-sm:w-[197px]  rounded-[20px]`}
+            style={{
+              backgroundImage: `url(${image1})`,
+              backgroundSize: "cover",
+              // backgroundRepeat: "no-repeat",
+              // backgroundPosition: "center",
+            }}
           >
-            <img
+            {/* <img
               src={image1} // replace with actual image URLs
               alt="Best Seller"
-              className="rounded-[20px] w-full h-full object-cover"
-            />
+              className="rounded-[20px] w-full h-full object-cover "
+            > */}
             {/* <div
-              className={`relative bg-red-900 text-white font-bold text-[40px] -rotate-90 ${
-                hovered === "second" || hovered === "third"
-                  ? "bottom-[150px] right-[30px] "
-                  : "bottom-[220px] right-[130px]"
-              }`}
+              className={`relative bg-red-900 text-white font-bold text-[40px] -rotate-90 px-[10px] py-[10px]`}
             >
               Best Seller
-            </div> */}
+            </div>  */}
           </div>
 
           {/* Second Image */}
           <div
-            className={`relative flex-shrink-0 w-[22.10%]
-             transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
-            // className={`relative flex-shrink-0 ${
-            //   hovered === "second" ? "w-[350px]" : "w-[22.10%]"
-            // } transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
-            // onMouseEnter={() => setHovered("second")}
-            // onMouseLeave={() => setHovered(null)}
+            // className={`relative flex-shrink-0 w-[22.10%]
+            //  transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
+            className={`relative flex-shrink-0 ${
+              hovered === "second" ? "w-[350px]" : "w-[22.10%]"
+            } transform  rounded-[20px] transition-width duration-700 ease-out  max-sm:w-[87px]`}
+            style={{
+              backgroundImage: `url(${image2})`,
+              backgroundSize: "cover",
+              // backgroundRepeat: "no-repeat",
+              // backgroundPosition: "center",
+            }}
+            onMouseEnter={() => setHovered("second")}
+            onMouseLeave={() => setHovered(null)}
           >
-            <img
+            {/* <img
               src={image2} // replace with actual image URLs
               alt="Trendy"
               className="rounded-[20px] h-full w-full object-fill"
-            />
+            /> */}
             {/* <div
               className={`relative  transform -rotate-90 text-white font-bold text-[40px] transition-all duration-500 ease-out ${
                 hovered === "second"
@@ -86,19 +94,25 @@ const Collection = () => {
 
           {/* Third Image */}
           <div
-            className={`relative flex-shrink-0 w-[22.10%]
-             transform transition-width duration-700 ease-out max-sm:w-[87px]`}
-            // className={`relative flex-shrink-0 ${
-            //   hovered === "third" ? "w-[350px]" : "w-[22.10%]"
-            // } transform transition-width duration-700 ease-out max-sm:w-[87px]`}
+            // className={`relative flex-shrink-0 w-[22.10%]
+            //  transform transition-width duration-700 ease-out max-sm:w-[87px]`}
+            className={`relative flex-shrink-0 ${
+              hovered === "third" ? "w-[350px]" : "w-[22.10%]"
+            } transform transition-width rounded-[20px] duration-700 ease-out max-sm:w-[87px]`}
+            style={{
+              backgroundImage: `url(${image3})`,
+              backgroundSize: "cover",
+              // backgroundRepeat: "no-repeat",
+              // backgroundPosition: "center",
+            }}
             onMouseEnter={() => setHovered("third")}
             onMouseLeave={() => setHovered(null)}
           >
-            <img
+            {/* <img
               src={image3} // replace with actual image URLs
               alt="Aesthetic"
               className="rounded-[20px] w-full h-full object-fill"
-            />
+            /> */}
             {/* <div
               className={`relative transform  -rotate-90 text-white font-bold text-[40px] transition-all duration-500 ease-out ${
                 hovered === "third"

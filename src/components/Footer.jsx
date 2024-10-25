@@ -6,11 +6,13 @@ import image3 from "../assets/facebook.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#214A3E] text-white px-[75px] pt-[96px] w-full">
-      <div className="container   flex flex-col justify-between ">
+    <footer className="bg-[#214A3E] h-full flex  text-white px-[75px] pt-[96px] w-full">
+      <div className="flex flex-col w-full">
         {/* Logo and Description */}
-        <div className="flex h-[246px] justify-between w-[1290px] mb-[96px] ">
-          <div className=" pr-[17px] pb-[45px]  w-[295px] flex flex-col gap-[25px]">
+        {/* <div className="flex h-[246px] flex justify-between w-[1290px] mb-[96px] "> */}
+        <div className="flex  justify-between h-[246px] mb-[96px] max-md:flex-col">
+          <div className="flex justify-between w-full w-[40%]">
+          <div className=" pr-[17px] pb-[45px] w-[295px] flex flex-col gap-[25px]">
             <div className="flex items-center space-x-3 mb-4">
               <img src={image} alt="Logo" className="h-[137px] w-[139px]" />
             </div>
@@ -44,9 +46,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col gap-[27px] text-left h-[247px]">
+          <div className="flex justify-between w-full  w-[40%]">
+          <div className="flex flex-col gap-[27px] text-left ">
             <h3 className="font-bold font-raleway  leading-[18px] text-[20px]">
               QUICK LINKS
             </h3>
@@ -71,10 +75,11 @@ const Footer = () => {
             <p className="text-[24px] font-roboto font-extralight">+91 9580628537</p>
           </div>
         </div>
+        </div>
 
         <div>
           {/* Divider Line */}
-          <div className="border-t border-[#F5F0D0]  w-[1290px] "></div>
+          <div className="border-t border-[#F5F0D0]   "></div>
 
           {/* Footer Bottom */}
           <div className="container flex flex-row justify-between items-center w-[1290px] h-[155px] pt-[49px] pb-[48px]">

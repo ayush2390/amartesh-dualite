@@ -4,7 +4,7 @@ import image from "../assets/1.png";
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-fill bg-center h-[760px] w-full p-[10px] flex justify-center items-center "
+      className="relative bg-fill bg-center h-[760px] w-full p-[10px] flex justify-center items-center max-sm:h-[520px]"
       style={{ backgroundImage: `url(${image})`, }}
     >
       {/* Overlay */}
@@ -23,7 +23,7 @@ const HeroSection = () => {
 
           {/* Button */}
           <button
-  className="font-raleway max-sm:w-[250px] max-sm:h-[44px] w-[267px] h-[63px] gap-[16px] text-[14px] bg-white bg-opacity-20 backdrop-blur-sm border border-white text-white py-[16px] px-[23px] rounded-[97px] transition-all flex items-center justify-center relative"
+  className="font-raleway w-[330px] max-sm:w-[250px] max-sm:h-[44px] h-[63px] gap-[16px] text-[20px] bg-white/5 max-sm:text-[14px] backdrop-blur-sm border border-white text-white py-[16px] px-[23px] rounded-[97px] transition-all flex items-center justify-center relative"
   style={{ boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}
 >
   Explore Our Collection
