@@ -21,11 +21,11 @@ function App() {
       <Collection />
       <Texture />
       <NewArrivalsSection />
-      <CraftsSection />
+      {/* <CraftsSection /> */}
       {/* <TestimonialSection /> */}
-      <ContactUs />
-      <FAQSection />
-      <Footer />
+      {/* <ContactUs /> */}
+      {/* <FAQSection /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
