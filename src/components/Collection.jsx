@@ -35,11 +35,12 @@ const Collection = () => {
         <div className="flex space-x-4    max-sm:space-x-[22px]">
           {/* First Image */}
           <div
-            className={`relative flex-shrink-0 ${
-              hovered === "second" || hovered === "third"
-                ? "w-[156px]"
-                : "w-[49.58%]"
-            } transform transition-width duration-700 ease-out max-sm:w-[197px] `}
+            className={`relative flex-shrink-0 w-[49.58%] transform transition-width duration-700 ease-out max-sm:w-[197px] `}
+            // className={`relative flex-shrink-0 ${
+            //   hovered === "second" || hovered === "third"
+            //     ? "w-[156px]"
+            //     : "w-[49.58%]"
+            // } transform transition-width duration-700 ease-out max-sm:w-[197px] `}
           >
             <img
               src={image1} // replace with actual image URLs
@@ -59,9 +60,11 @@ const Collection = () => {
 
           {/* Second Image */}
           <div
-            className={`relative flex-shrink-0 ${
-              hovered === "second" ? "w-[350px]" : "w-[22.10%]"
-            } transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
+            className={`relative flex-shrink-0 w-[22.10%]
+             transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
+            // className={`relative flex-shrink-0 ${
+            //   hovered === "second" ? "w-[350px]" : "w-[22.10%]"
+            // } transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
             onMouseEnter={() => setHovered("second")}
             onMouseLeave={() => setHovered(null)}
           >
@@ -83,9 +86,11 @@ const Collection = () => {
 
           {/* Third Image */}
           <div
-            className={`relative flex-shrink-0 ${
-              hovered === "third" ? "w-[350px]" : "w-[22.10%]"
-            } transform transition-width duration-700 ease-out max-sm:w-[87px]`}
+            className={`relative flex-shrink-0 w-[22.10%]
+             transform transition-width duration-700 ease-out max-sm:w-[87px]`}
+            // className={`relative flex-shrink-0 ${
+            //   hovered === "third" ? "w-[350px]" : "w-[22.10%]"
+            // } transform transition-width duration-700 ease-out max-sm:w-[87px]`}
             onMouseEnter={() => setHovered("third")}
             onMouseLeave={() => setHovered(null)}
           >
