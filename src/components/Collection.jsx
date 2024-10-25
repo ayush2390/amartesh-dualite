@@ -65,8 +65,8 @@ const Collection = () => {
             // className={`relative flex-shrink-0 ${
             //   hovered === "second" ? "w-[350px]" : "w-[22.10%]"
             // } transform transition-width duration-700 ease-out  max-sm:w-[87px]`}
-            onMouseEnter={() => setHovered("second")}
-            onMouseLeave={() => setHovered(null)}
+            // onMouseEnter={() => setHovered("second")}
+            // onMouseLeave={() => setHovered(null)}
           >
             <img
               src={image2} // replace with actual image URLs

@@ -27,7 +27,7 @@ const HeroSection = () => {
   style={{ boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}
 >
   Explore Our Collection
-  <span className="w-[57px] h-[1px] bg-white inline-block relative">
+  <span className="w-[57px] max-sm:w-[40px] h-[1px] bg-white inline-block relative">
     <span className="absolute right-0 top-[-3px] border-t-[2px] border-r-[2px] border-white w-2 h-2 rotate-45"></span>
   </span>
 </button>
