@@ -16,14 +16,14 @@ import Collection from "./components/Collection";
 function App() {
   return (
     <div className="w-[100%]">
-       <Navbar />
+<Navbar />
       <HeroSection />
       <Collection />0
       <Texture />
-      <NewArrivalsSection /> 
+      <NewArrivalsSection />  
       {/* <CraftsSection /> */}
       {/* <TestimonialSection /> */}
-      {/* <ContactUs /> */}
+      <ContactUs />
       <FAQSection />
       {/* <Footer /> */}
     </div>
