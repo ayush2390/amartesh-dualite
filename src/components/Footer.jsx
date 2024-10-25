@@ -6,75 +6,84 @@ import image3 from "../assets/facebook.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#214A3E] h-full flex  text-white px-[75px] pt-[96px] w-full">
-      <div className="flex flex-col w-full">
+    <footer className="bg-[#214A3E] flex  text-white px-[75px] pt-[96px] w-full max-md:h-[980px] max-sm:h-[1566px] max-sm:px-[50px]">
+      <div className="flex flex-col w-full max-md:gap-[96px] max-sm:gap-[69px]">
         {/* Logo and Description */}
         {/* <div className="flex h-[246px] flex justify-between w-[1290px] mb-[96px] "> */}
-        <div className="flex  justify-between h-[246px] mb-[96px] max-md:flex-col">
-          <div className="flex justify-between w-full w-[40%]">
-          <div className=" pr-[17px] pb-[45px] w-[295px] flex flex-col gap-[25px]">
-            <div className="flex items-center space-x-3 mb-4">
-              <img src={image} alt="Logo" className="h-[137px] w-[139px]" />
-            </div>
-            <p className="text-[14px] tracking-[5%] leading-[120%] text-left font-roboto font-light">
-              Inspired by the raw beauty of stone, sand, & marble. Our textures
-              bring the calming essence of nature indoors, adding depth &
-              character.
-            </p>
-          </div>
+        <div className="flex justify-between   max-md:flex-col max-md:gap-[96px] max-sm:gap-[14px] ">
+          <div className="flex justify-between  w-[40%] max-md:w-full  ">
+            <div className="flex w-full justify-between max-md:gap-[21.42%] max-md:items-center max-sm:flex-col max-sm:justify-center  max-sm:gap-[84px] max-sm:h-[536px]">
+              <div className=" pr-[17px]  pb-[45px] w-[295px] flex   flex-col gap-[25px] max-md:pb-[0px] max-sm:items-center max-sm:pr-0">
+                <div className="flex items-center space-x-3">
+                  <img src={image} alt="Logo" className="h-[137px] w-[139px]" />
+                </div>
+                <p className="text-[14px] tracking-[5%] leading-[120%] text-left font-roboto font-light max-sm:text-center max-sm:text-[12px]">
+                  Inspired by the raw beauty of stone, sand, & marble. Our
+                  textures bring the calming essence of nature indoors, adding
+                  depth & character.
+                </p>
+              </div>
 
-          {/* Company Links */}
-          <div className=" flex flex-col gap-[27px] text-left h-[247px]">
-            <h3 className="font-bold font-raleway leading-[18px] text-[20px]">
-              COMPANY
-            </h3>
-            <ul className="space-y-2">
-              <li className="text-[16px] font-roboto font-light leading-[30px]">
-                About us
-              </li>
-              <li className="text-[16px] font-roboto font-light  leading-[30px]">
-                Partner program
-              </li>
-              <li className="text-[16px] font-roboto font-light leading-[30px]">
-                Career
-              </li>
-              <li className="text-[16px] font-roboto font-light  leading-[30px]">
-                Contact us
-              </li>
-              <li className="text-[16px] font-roboto font-light leading-[30px]">
-                Privacy Policy
-              </li>
-            </ul>
-          </div>
+              {/* Company Links */}
+              <div className=" flex flex-col gap-[27px] text-left h-[247px] max-md:h-[204px] ">
+                <h3 className="font-bold font-raleway leading-[18px] text-[20px]">
+                  COMPANY
+                </h3>
+                <ul className="space-y-2 max-sm:text-center">
+                  <li className="text-[16px] font-roboto font-light leading-[30px]">
+                    About us
+                  </li>
+                  <li className="text-[16px] font-roboto font-light  leading-[30px]">
+                    Partner program
+                  </li>
+
+                  <li className="text-[16px] font-roboto font-light  leading-[30px]">
+                    Contact us
+                  </li>
+                  <li className="text-[16px] font-roboto font-light leading-[30px]">
+                    Privacy Policy
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
-          <div className="flex justify-between w-full  w-[40%]">
-          <div className="flex flex-col gap-[27px] text-left ">
-            <h3 className="font-bold font-raleway  leading-[18px] text-[20px]">
-              QUICK LINKS
-            </h3>
-            <ul className="space-y-2">
-              <li className="text-[16px] font-roboto font-light  leading-[30px]">Pricing</li>
-              <li className="text-[16px] font-roboto font-light  leading-[30px]">Reviews</li>
-              <li className="text-[16px] font-roboto font-light  leading-[30px]">Mail</li>
-              <li className="text-[16px]  font-roboto font-light  leading-[30px]">Contact us</li>
-              <li className="text-[16px] font-roboto font-light  leading-[30px]">Privacy Policy</li>
-            </ul>
-          </div>
+          <div className="flex   justify-between w-[40%] max-md:w-full max-md:gap-[43.53%] max-sm:flex-col max-sm:items-center max-sm:gap-[52px] ">
+            <div className="flex flex-col gap-[27px] text-left ">
+              <h3 className="font-bold font-raleway  leading-[18px] text-[20px]">
+                QUICK LINKS
+              </h3>
+              <ul className="space-y-2 max-md:space-y-[13px] max-sm:text-center">
+                <li className="text-[16px] font-roboto font-light  leading-[30px]">
+                  Pricing
+                </li>
+                <li className="text-[16px] font-roboto font-light  leading-[30px]">
+                  Reviews
+                </li>
+                <li className="text-[16px] font-roboto font-light  leading-[30px]">
+                  Mail
+                </li>
+                <li className="text-[16px]  font-roboto font-light  leading-[30px]">
+                  Contact us
+                </li>
+              </ul>
+            </div>
 
-          {/* Contact Info */}
-          <div className="text-left space-y-[14px]">
-            <h3 className="font-bold font-raleway text-[20px]">CONTACT</h3>
-            <p className=" text-[24px] font-roboto font-extralight ">
-              info@cementolime.com
-              <br />
-              www.cementolime.com
-            </p>
-            <p className="font-bold font-raleway text-[20px]">HELPLINE</p>
-            <p className="text-[24px] font-roboto font-extralight">+91 9580628537</p>
+            {/* Contact Info */}
+            <div className="text-left space-y-[14px] max-sm:text-center max-sm:h-[246px]">
+              <h3 className="font-bold font-raleway text-[20px]">CONTACT</h3>
+              <p className=" text-[24px] font-roboto font-extralight max-md:text-[20px] max-sm:text-[16px]">
+                info@cementolime.com
+                <br />
+                www.cementolime.com
+              </p>
+              <p className="font-bold font-raleway text-[20px]">HELPLINE</p>
+              <p className="text-[24px] font-roboto font-extralight  max-md:text-[20px] max-sm:text-[16px]">
+                +91 9580628537
+              </p>
+            </div>
           </div>
-        </div>
         </div>
 
         <div>
@@ -82,17 +91,20 @@ const Footer = () => {
           <div className="border-t border-[#F5F0D0]   "></div>
 
           {/* Footer Bottom */}
-          <div className="container flex flex-row justify-between items-center w-[1290px] h-[155px] pt-[49px] pb-[48px]">
+          <div className="flex flex-row justify-between items-center h-[155px] pt-[49px] pb-[48px] max-sm:flex-col max-sm:h-[267px]">
             {/* Left-side content */}
-            <div className="w-[306px] h-[71px] flex flex-col gap-[9px] py-[1px]">
-              <h2 className="text-[32px] leading-[22px] font-italiana">Cementolime</h2>
-              <p className="text-[14px] font-roboto leading-[22px]">
+            <div className="w-[306px] h-[71px] flex flex-col gap-[9px] py-[1px] max-sm:text-center">
+              <h2 className="text-[32px] leading-[22px] font-italiana">
+                Cementolime
+              </h2>
+              <p className="text-[14px] font-roboto leading-[22px] max-sm:text-center">
                 &copy; 2024 Cementolime, Inc. All rights reserved.
               </p>
             </div>
 
             {/* Right-side (Social Media Icons) */}
-            <div className="flex w-[226px] gap-[23px] mr-[100px]">
+            {/* <div className="flex w-[226px] gap-[23px]  mr-[100px] max-md:mr-0 "> */}
+            <div className="flex gap-[23px]  mr-[100px] max-md:mr-0 ">
               <div className="w-[60px] h-[60px] rounded-full bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
                 <img src={image1} />
               </div>

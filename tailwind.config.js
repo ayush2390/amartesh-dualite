@@ -6,6 +6,7 @@ export default {
       "1350px": "1350px",
       md: "768px",
       sm: "425px",
+      ssm: "495px",
     },
     extend: {
       fontFamily: {

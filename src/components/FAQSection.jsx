@@ -34,19 +34,20 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-[#F8F8F8] px-[92px] py-[44px] w-full h-[867px] flex justify-center items-center">
-      <div className="h-[779px] flex py-[82px] gap-[73px] flex-col">
-        <div>
-          <h2 className="text-[64px] font-bold font-raleway text-center">
+    // <div className="bg-[#F8F8F8] px-[92px]  w-full h-full flex justify-center items-center max-sm:px-[24px]">
+    <div className="bg-[#F8F8F8] px-[92px] pb-[82px] w-full h-full flex justify-center items-center max-sm:px-[24px] max-sm:h-[847px]">
+      <div className="h-full flex w-full pt-[82px] gap-[73px] flex-col items-center max-sm:pb-[82px] max-sm:gap-[36px]">
+        <div className="flex flex-col gap-[36px] max-sm:gap-[18px]">
+          <h2 className="text-[64px] w-full font-bold font-raleway text-center max-md:text-[48px] max-sm:text-[24px]">
             Frequently Asked{" "}
             <span className="text-[#214A3E] italic">Questions</span>
           </h2>
-          <p className="text-center font-raleway  text-[#214A3E] text-[20px]">
+          <p className="text-center font-raleway  text-[#214A3E] text-[20px] max-md:text-[15px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
             beatae error laborum.
           </p>
         </div>
-        <div className="w-[852px]">
+        <div className="max-w-[852px] w-full ">
           <ul className="text-[#214A3E]">
             {questions.map((question, index) => (
               <li key={index}>
@@ -57,7 +58,7 @@ const FAQSection = () => {
                   onClick={() => handleClick(index)}
                 >
                   <div className="flex justify-between items-center">
-                    <h3 className="text-[22px] font-bold w-[796px]">
+                    <h3 className="text-[22px] font-bold w-[796px] max-sm:text-[16px]">
                       {index + 1}. {question.title}
                     </h3>
                     <div>
@@ -70,7 +71,7 @@ const FAQSection = () => {
                   <div>
                     {activeIndex === index && (
                       <div className="leading-[28px]">
-                        <p className="text-[#214A3E] font-medium text-[18px]">
+                        <p className="text-[#214A3E] font-medium text-[18px] max-sm:text-[12px]">
                           {question.answer}
                         </p>
                       </div>
