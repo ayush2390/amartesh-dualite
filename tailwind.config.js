@@ -7,7 +7,7 @@ export default {
       md: "768px",
       sm: "425px",
       ssm: "495px",
-      xmd: "1028px",
+      xmd: "1020px",
       ymd: "680px",
     },
     extend: {

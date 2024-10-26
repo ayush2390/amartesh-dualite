@@ -18,10 +18,10 @@ function App() {
     <div className="w-[100%]">
 <Navbar />
       <HeroSection />
-      <Collection />0
+      <Collection />
       <Texture />
       <NewArrivalsSection />  
-      {/* <CraftsSection /> */}
+      <CraftsSection />
       {/* <TestimonialSection /> */}
       <ContactUs />
       <FAQSection />
