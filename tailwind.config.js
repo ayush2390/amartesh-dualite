@@ -9,6 +9,10 @@ export default {
       ssm: "495px",
       xmd: "1020px",
       ymd: "680px",
+      zmd: "950px",
+      xsm: "477px",
+      ysm: "520px",
+      zsm: "580px",
     },
     extend: {
       fontFamily: {
