@@ -1,0 +1,9 @@
+  @keyframes slideBackground {
+    0% {
+      background-position: 100% center;
+    }
+    100% {
+      background-position: center;
+    }
+  }
+

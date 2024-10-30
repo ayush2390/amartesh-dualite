@@ -16,7 +16,9 @@ export default {
       "800px": "800px",
       "534px": "534px",
       "682px":"682px",
-      "445px": "445px"
+      "445px": "445px",
+      "635px":"635px",
+ "1215px": "1215px"
     },
     extend: {
       fontFamily: {

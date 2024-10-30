@@ -1,8 +1,8 @@
 import React from "react";
-import image from "../assets/image-10.png";
-import image1 from "../assets/x.png";
-import image2 from "../assets/instagram.png";
-import image3 from "../assets/facebook.png";
+import image from "../assets/HomePage/image-10.png";
+import image1 from "../assets/HomePage/x.png";
+import image2 from "../assets/HomePage/instagram.png";
+import image3 from "../assets/HomePage/facebook.png";
 
 const Footer = () => {
   return (
@@ -63,7 +63,9 @@ const Footer = () => {
           </div>
 
           <div className="text-left space-y-[14px] max-zsm:text-center max-sm:h-[246px]">
-            <h3 className="font-bold font-raleway text-[20px] leading-[18px]">CONTACT</h3>
+            <h3 className="font-bold font-raleway text-[20px] leading-[18px]">
+              CONTACT
+            </h3>
             <p className="text-[24px] font-roboto font-extralight max-md:text-[20px] max-ysm:text-[16px]">
               info@cementolime.com
               <br />
@@ -96,13 +98,13 @@ const Footer = () => {
             {/* <div className="flex w-[226px] gap-[23px]  mr-[100px] max-md:mr-0 "> */}
             <div className="flex gap-[23px]">
               <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
-                <img src={image1} className="w-[34px] h-[34px]"/>
+                <img src={image1} className="w-[34px] h-[34px]" />
               </div>
               <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
                 <img src={image2} className="w-[30px] h-[30px]" />
               </div>
               <div className="w-[60px] flex justify-center items-center h-[60px] rounded-full bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
-                <img src={image3} className="w-[30px] h-[30px]"/>
+                <img src={image3} className="w-[30px] h-[30px]" />
               </div>
             </div>
           </div>

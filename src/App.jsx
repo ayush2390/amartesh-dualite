@@ -1,32 +1,25 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import NewArrivalsSection from "./components/NewArrivalsSection";
-import TestimonialSection from "./components/TestimonialSection";
-import FAQSection from "./components/FAQSection";
-import CraftsSection from "./components/CraftsSection";
-import Texture from "./components/Texture";
+
 import Footer from "./components/Footer";
-import ContactUs from "./components/Contact";
-import Collection from "./components/Collection";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import AboutUsPage from "./components/AboutUsPage";
 
 function App() {
   return (
-    <div className="w-[100%]">
+    <BrowserRouter>
+      <div className="w-[100%]">
         <Navbar />
-       <HeroSection />   
-      <Collection />
-        <Texture />
-       <NewArrivalsSection />
-      <CraftsSection />
-      <TestimonialSection />
-      <ContactUs />
-       <FAQSection />
-      <Footer />     
-    </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
