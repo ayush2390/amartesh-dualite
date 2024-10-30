@@ -95,14 +95,14 @@ const Footer = () => {
             {/* Right-side (Social Media Icons) */}
             {/* <div className="flex w-[226px] gap-[23px]  mr-[100px] max-md:mr-0 "> */}
             <div className="flex gap-[23px]">
-              <div className="w-[60px] h-[60px] rounded-full bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
-                <img src={image1} />
+              <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
+                <img src={image1} className="w-[34px] h-[34px]"/>
               </div>
-              <div className="w-[60px] h-[60px] rounded-full bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
-                <img src={image2} />
+              <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
+                <img src={image2} className="w-[30px] h-[30px]" />
               </div>
-              <div className="w-[60px] h-[60px] rounded-full bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
-                <img src={image3} />
+              <div className="w-[60px] flex justify-center items-center h-[60px] rounded-full bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
+                <img src={image3} className="w-[30px] h-[30px]"/>
               </div>
             </div>
           </div>

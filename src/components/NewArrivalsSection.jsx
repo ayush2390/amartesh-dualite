@@ -28,9 +28,9 @@ const NewArrivalsSection = () => {
         </h1>
 
         {/* Button with Arrow */}
-        <button className=" font-raleway w-[179px] h-[50px] flex gap-[14px] text-[20px] relative bg-[#214A3E] py-[13px] px-[20px] rounded-full text-white  flex items-center justify-center transition-all">
+        <button className=" font-raleway hover:bg-[#1D352E]  hover:w-[185px] transition-all duration-200 w-[179px] hover:gap-[20px] h-[50px] flex gap-[14px] text-[20px] relative bg-[#214A3E] py-[13px] px-[20px] rounded-full text-white  flex items-center justify-center transition-all">
           Purchase
-          <span className=" w-[29px] h-[1px] bg-white inline-block relative">
+          <span className="  w-[29px] h-[1px] bg-white inline-block relative">
             <span className="absolute right-0 top-[-3px] border-t-[2px] border-r-[2px] border-white w-2 h-2 rotate-45"></span>
           </span>
         </button>

@@ -1,73 +1,53 @@
-import React from "react";
-import image from "../assets/rectangle-47.png";
-const ContactUs = () => {
+import React, { useState, useRef, useEffect } from "react";
+
+const Contactus = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [height, setHeight] = useState(0);
+  const contentRef = useRef(null);
+
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      // Set the height to the scrollHeight of the content
+      setHeight(contentRef.current.scrollHeight);
+    } else {
+      // Collapse the content by setting height to 0
+      setHeight(0);
+    }
+  }, [isOpen]);
+
   return (
-    // <section className=" flex justify-center w-full">
-    <section className=" flex justify-center items-center w-full">
-      {/* <div className=" flex items-center gap-[95px] bg-red-900 py-[95px] px-[81px] max-md:w-[685px] justify-center max-md:gap-[35px] max-md:px-[40px]"> */}
-      <div className=" flex items-center gap-[95px] py-[95px] px-[81px] max-md:w-[685px] justify-center max-xmd:gap-[49px] max-md:gap-[35px] max-md:px-[0px]">
-        {/* Left Side - Form Section */}
-        {/* <div className="w-[644px] h-[595px] space-y-[23px]"> */}
-        <div className="max-w-[644px] w-full max-h-[595px] h-full space-y-[23px] max-md:w-[341px] max-md:h-[532px]">
-          <div className="flex items-center mb-4">
-            <div className="w-[64px] h-[2px] bg-[#8FA49E] max-md:w-[32px]"></div>
-            <h2 className="text-[14px] font-raleway font-semibold uppercase  tracking-wider text-[#8FA49E] ml-3">
-              Contact Us
-            </h2>
-          </div>
+    <div className="border-b border-gray-300">
+      {/* Contactus Header */}
+      <button
+        onClick={toggleAccordion}
+        className="w-full text-left py-4 px-6 font-semibold text-gray-800 flex justify-between items-center focus:outline-none"
+      >
+        <span>{question}</span>
+        <span
+          className={`transform transition-transform ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
+        >
+          ▼
+        </span>
+      </button>
 
-          <h1 className="text-[54px] font-raleway font-bold text-[#000000] leading-[62px] max-md:text-[32px] max-xmd:text-[36px] max-xmd:leading-[120%]">
-            Let’s Create{" "}
-            <span className="text-[#214A3E] italic">Something Great</span>{" "}
-            Together
-          </h1>
-          <p className="text-[18px] font-raleway font-light text-[#444444] text-left max-md:text-[12px] max-md:leading-[120%]">
-            Lorem ipsum tempor dolor elementum tellus non ipsum faucibus. Justo,
-            magna mauris posuere auctor justo. Habitant proin aliquet volutpat
-            leo ultricies.
-          </p>
-
-          {/* Form */}
-          <form className="space-y-[30px] max-md:space-y-[26px]">
-            <div className="flex gap-[30px] max-md:gap-[16px]">
-              <input
-                type="text"
-                placeholder="Enter Full Name"
-                className="w-full max-w-[208px] max-md:h-[49px] placeholder-[#8FA49E] font-raleway placeholder-text-[18px] max-md:text-[14px] h-[57px] p-3 bg-[#E5EDE4] border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <input
-                type="text"
-                placeholder="Enter Mobile Number"
-                className="w-full max-w-[208px] placeholder-[#8FA49E] max-md:h-[49px] font-raleway placeholder-text-[18px] max-md:text-[14px] h-[57px] p-3 bg-[#E5EDE4] border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-            </div>
-            <textarea
-              placeholder="Enter Your Message"
-              className="w-full max-w-[439px] h-[144px] placeholder-[#8FA49E] max-md:h-[99px] font-raleway placeholder-text-[18px] max-md:text-[14px] p-3 bg-[#E5EDE4] border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <button
-              type="submit"
-              className="bg-[#214A3E] font-raleway w-[150px] h-[50px] text-white px-[24px] py-[13px] rounded-[89px] text-[20px] flex items-center justify-between "
-            >
-              Submit
-              <span className="ml-[14px] w-8 h-[1px] bg-white inline-block relative">
-                <span className="absolute right-0 top-[-3px] border-t-[2px] border-r-[2px] border-white w-2 h-2 rotate-45"></span>
-              </span>
-            </button>
-          </form>
-        </div>
-
-        {/* Right Side - Image Section */}
-        <div className=" max-w-[538px] h-[666px] flex justify-center max-md:w-[309px] max-md:h-[532px] max-ymd:hidden">
-          <img
-            src={image}
-            alt="Decorative Image"
-            className=" object-cover  shadow-lg"
-          />
+      {/* Contactus Content with Smooth Transition */}
+      <div
+        ref={contentRef}
+        className="overflow-hidden transition-height duration-5000 ease-in-out"
+        style={{ height: `${height}px` }}
+      >
+        <div className="px-6 py-4">
+          <p className="text-gray-600">{answer}</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default ContactUs;
+export default Contactus;

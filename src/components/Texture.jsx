@@ -4,16 +4,16 @@ import image2 from "../assets/pikaso.png";
 import image3 from "../assets/textures.png";
 const Texture = () => {
   return (
-    <div className=" flex flex-col items-center justify-center bg-[#F8F8F8] h-full py-[86px] px-[88px] w-full gap-[68px] max-sm:px-[24px] ">
+    <div className=" flex flex-col items-center justify-center bg-[#F8F8F8] h-full py-[86px] px-[88px] w-full gap-[68px] max-534px:px-[24px] ">
       <div className="flex flex-col items-center gap-[40px]">
-        <h1 className="text-[64px] font-bold leading-[120%] font-raleway text-[#000000] text-center max-md:text-[40px] max-sm:text-[24px]">
+        <h1 className="text-[64px] font-bold leading-[120%] font-raleway text-[#000000] text-center max-md:text-[40px] max-534px:text-[24px]">
           Illuminate Your Space with{" "}
           <span className="text-[#214A3E] italic">
             <br />
             Captivating Designs
           </span>
         </h1>
-        <p className="text-[20px] text-[#758195] text-center font-raleway leading-[120%]  max-md:text-[20px] max-sm:text-[16px]">
+        <p className="text-[20px] text-[#758195] text-center font-raleway leading-[120%]  max-md:text-[20px] max-534px:text-[16px]">
           Inspired by the raw beauty of stone, sand, & marble. Our textures
           bring the calming essence of nature indoors, adding depth & character.
         </p>
@@ -61,7 +61,7 @@ const Texture = () => {
       </div>
 
       {/* Button */}
-      <button className=" px-[24px] py-[13px] bg-[#214A3E] leading-[120%] gap-[14px] text-white text-[19px] rounded-full   w-[258px] h-[50px] flex items-center justify-center">
+      <button className=" px-[24px] py-[13px] bg-[#214A3E] leading-[120%] gap-[14px] hover:bg-[#1D352E]  hover:w-[264px] transition-all duration-200 hover:gap-[20px] text-white text-[19px] rounded-full   w-[258px] h-[50px] flex items-center justify-center">
         <div className="font-raleway text-[20px] font-medium">Make your Choice</div>
         <span className=" w-[29px] h-[1px] bg-white inline-block relative">
           <span className="absolute right-0 top-[-3px] border-t-[2px] border-r-[2px] border-white w-2 h-2 rotate-45"></span>

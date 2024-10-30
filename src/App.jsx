@@ -10,22 +10,22 @@ import FAQSection from "./components/FAQSection";
 import CraftsSection from "./components/CraftsSection";
 import Texture from "./components/Texture";
 import Footer from "./components/Footer";
-import ContactUs from "./components/ContactUs";
+import ContactUs from "./components/Contact";
 import Collection from "./components/Collection";
 
 function App() {
   return (
     <div className="w-[100%]">
-<Navbar />
-      <HeroSection />
+        <Navbar />
+       <HeroSection />   
       <Collection />
-      <Texture />
-      <NewArrivalsSection />  
-      <CraftsSection /> 
-      {/* <TestimonialSection /> */}
-       <ContactUs />
-      <FAQSection /> 
-      <Footer />
+        <Texture />
+       <NewArrivalsSection />
+      <CraftsSection />
+      <TestimonialSection />
+      <ContactUs />
+       <FAQSection />
+      <Footer />     
     </div>
   );
 }
