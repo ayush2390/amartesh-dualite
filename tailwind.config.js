@@ -25,7 +25,9 @@ export default {
         raleway: ["Raleway", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         italiana: ["Italiana", "sans-serif"],
-        robotoserif: ["Roboto-Serif", "sans-serif"]
+        robotoserif: ["Roboto-Serif", "sans-serif"],
+        playfair: ["Playfair Display", "serif"]
+
       },
       rotate: {
         '-90': '-90deg', // Add custom rotation for -90 degrees

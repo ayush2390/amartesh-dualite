@@ -10,13 +10,13 @@ import Subscribe from "./AboutUs/Subscribe.jsx";
 function AboutUsPage() {
   return (
     <div className="w-[100%]">
-      <HeroSection />
+       <HeroSection />
       <Certifications />
-      <About />
-      {/* <Benefits /> */}
-      {/* <Services /> */}
-      <Area />
-      <Subscribe />
+      <About /> 
+       <Benefits /> 
+      <Services />
+       <Area />
+      <Subscribe /> 
     </div>
   );
 }
