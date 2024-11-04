@@ -25,7 +25,10 @@ const Navbar = () => {
           >
             <li className="text-white cursor-pointer text-[20px]">About</li>
           </div>
-          <div className="px-[28px] max-xmd:px-[23px] max-xmd:h-[34px] max-xmd:py-[5px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer flex items-center rounded-full text-center">
+          <div
+            className="px-[28px] max-xmd:px-[23px] max-xmd:h-[34px] max-xmd:py-[5px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer flex items-center rounded-full text-center"
+            onClick={() => navigate("/products")}
+          >
             <li className=" text-white cursor-pointer text-[20px]">Products</li>
           </div>
           <div className="px-[28px] max-xmd:px-[23px] max-xmd:h-[34px] max-xmd:py-[5px] py-[9px] hover:bg-[#556f64] hover:cursor-pointer flex items-center rounded-full text-center">

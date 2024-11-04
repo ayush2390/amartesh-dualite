@@ -6,11 +6,8 @@ const About = () => {
   return (
     <div className="w-[100%]">
       <section className="flex justify-center items-center w-full">
-        {/* <div className=" flex items-center gap-[95px] bg-red-900 py-[95px] px-[81px] max-md:w-[685px] justify-center max-md:gap-[35px] max-md:px-[40px]"> */}
-        <div className=" flex max-md:flex-col items-center gap-[95px] py-[95px] max-xsm:py-[80px] px-[81px] max-md:px-[68px] max-xsm:px-[24px] justify-center max-md:gap-[103px] max-md:px-[0px]">
-          {/* Left Side - Form Section */}
-          {/* <div className="w-[644px] h-[595px] space-y-[23px]"> */}
-          <div className="max-w-[644px]  w-full  max-h-[595px] h-full space-y-[23px] ">
+        <div className=" flex max-md:flex-col  items-center gap-[95px] py-[95px] max-xsm:py-[80px] px-[81px] max-md:px-[68px] max-xsm:px-[24px] justify-center max-md:gap-[103px] max-md:px-[0px]">
+          <div className="max-w-[644px]   w-full   h-full space-y-[23px] ">
             <div className="flex items-center mb-4">
               <div className="w-[64px] h-[2px] bg-[#8FA49E] "></div>
               <h2 className="text-[14px] font-raleway font-semibold uppercase  tracking-wider text-[#8FA49E] ml-3">
@@ -33,8 +30,6 @@ const About = () => {
               ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc.
               Faucibus sit odio bibendum lobortis diam.
             </p>
-
-            {/* Form */}
           </div>
 
           {/* Right Side - Image Section */}

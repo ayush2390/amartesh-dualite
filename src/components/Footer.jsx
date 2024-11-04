@@ -9,7 +9,6 @@ const Footer = () => {
     <footer className="bg-[#214A3E] flex  text-white px-[75px] pt-[96px] w-full max-md:h-[980px] max-zsm:h-[1566px] max-zsm:px-[50px] ">
       <div className="flex flex-col w-full max-zmd:gap-[96px] max-sm:gap-[69px]">
         {/* Logo and Description */}
-        {/* <div className="flex h-[246px] flex justify-between w-[1290px] mb-[96px] "> */}
         <div className="flex justify-between flex-wrap max-zmd:grid max-zmd:grid-cols-2 max-zmd:gap-[96px] max-zsm:flex max-zsm:flex-col ">
           <div className="pr-[17px] pb-[45px] max-w-[295px]   flex flex-col gap-[25px] max-md:pb-0 max-zsm:items-center max-zsm:max-w-[580px] max-sm:pr-0">
             <div className="flex items-center space-x-3 ">
@@ -66,7 +65,8 @@ const Footer = () => {
             <h3 className="font-bold font-raleway text-[20px] leading-[18px]">
               CONTACT
             </h3>
-            <p className="text-[24px] font-roboto font-extralight max-md:text-[20px] max-ysm:text-[16px]">
+            {/* <p className="text-[24px] font-roboto font-extralight max-md:text-[20px] max-ysm:text-[16px]"> */}
+            <p className="text-[24px] font-roboto font-extralight max-md:text-[20px] max-534px:text-[16px]">
               info@cementolime.com
               <br />
               www.cementolime.com
@@ -95,7 +95,6 @@ const Footer = () => {
             </div>
 
             {/* Right-side (Social Media Icons) */}
-            {/* <div className="flex w-[226px] gap-[23px]  mr-[100px] max-md:mr-0 "> */}
             <div className="flex gap-[23px]">
               <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white bg-opacity-15 border-white border-[1px] border-opacity-50	 px-[13px] py-[12px]">
                 <img src={image1} className="w-[34px] h-[34px]" />

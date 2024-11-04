@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../../assets/HomePage/1.png"
-import image2 from "../../assets/HomePage/2.jpg"
-import image3 from "../../assets/HomePage/3.jpg"
+import image1 from "../../assets/HomePage/1.png";
+import image2 from "../../assets/HomePage/2.jpg";
+import image3 from "../../assets/HomePage/3.jpg";
 
 const HeroSection = () => {
   // Array of images for the carousel

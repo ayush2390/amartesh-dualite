@@ -34,7 +34,6 @@ const FAQSection = () => {
   ];
 
   return (
-    // <div className="bg-[#F8F8F8] px-[92px]  w-full h-full flex justify-center items-center max-sm:px-[24px]">
     <div className="bg-[#F8F8F8] px-[92px] pb-[82px] w-full h-full flex justify-center items-center max-sm:px-[24px] max-sm:h-[847px]">
       <div className="h-full flex w-full pt-[82px] gap-[73px] flex-col items-center max-sm:pb-[82px] max-sm:gap-[36px]">
         <div className="flex flex-col gap-[36px] max-sm:gap-[18px]">

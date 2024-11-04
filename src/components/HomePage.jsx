@@ -7,18 +7,20 @@ import CraftsSection from "./HomePage/CraftsSection";
 import Texture from "./HomePage/Texture";
 import ContactUs from "./HomePage/Contact";
 import Collection from "./HomePage/Collection";
+import CompanyLogos from "./HomePage/CompanyLogos";
 
 function HomePage() {
   return (
     <div className="w-[100%]">
       <HeroSection />
-       <Collection />
+      <CompanyLogos />
+      <Collection />
       <Texture />
       <NewArrivalsSection />
       <CraftsSection />
       <TestimonialSection />
       <ContactUs />
-      <FAQSection /> 
+      <FAQSection />
     </div>
   );
 }

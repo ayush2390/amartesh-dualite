@@ -4,12 +4,10 @@ import image3 from "../../assets/HomePage/33.png";
 import image4 from "../../assets/HomePage/44.png";
 const CraftsSection = () => {
   return (
-    // <div className="w-full flex flex-col  items-center justify-center h-[1780px] gap-[64px]">
     <div className="w-full  flex  h-full items-center justify-center py-[126px] px-[77px] max-635px:px-[18px] ">
-      {/* <div className="h-[1690px] gap-x-[64px] gap-y-[81px]"> */}
       {/* Title and description */}
       <div className="  flex flex-col w-full  items-center justify-center gap-[64px]  max-md:gap-[14px]">
-        <div className="flex flex-row   h-[213px] w-full  px-[10px] py-[10px] justify-between items-center  max-xmd:max-w-[91.99%] max-md:max-w-[94.9%] max-sm:max-w-[388px] max-635px:h-[94px]">
+        <div className="flex flex-row   h-[213px] w-full  px-[10px] py-[10px] max-sm:px-[0] justify-between items-center  max-xmd:max-w-[91.99%] max-md:max-w-[94.9%] max-sm:max-w-[388px] max-635px:h-[94px]">
           <div className="flex flex-col w-[546px] gap-[9px]">
             <div className="flex items-center ">
               <div className="w-[64px] h-[2px] bg-[#8FA49E] max-ssm:w-[22px]"></div>
@@ -17,7 +15,7 @@ const CraftsSection = () => {
                 Recent works
               </h2>
             </div>
-            <h2 className="text-[60px] font-bold font-raleway text-left leading-[72px] max-682px:text-[40px] max-xmd:text-[48px] max-445px:text-[24px] max-xmd:leading-[120%]">
+            <h2 className="text-[60px] font-bold font-raleway text-left leading-[72px] max-ymd:text-[40px] max-xmd:text-[48px] max-sm:text-[24px] max-xmd:leading-[120%]">
               Some of <span className="text-[#214A3E] italic">our crafts</span>{" "}
               <br />
               made with love
@@ -30,11 +28,11 @@ const CraftsSection = () => {
               average home goods, because when you level up your everyday
               objects, you elevate your daily rituals. Let the magic happen.
             </p>
-            <p className="text-[#8490A1] font-raleway hidden max-md:block max-w-[581px] w-screen text-[24px] text-right leading-[28px] max-xmd:text-[16px] max-md:text-[15px] max-xmd:leading-[150%] max-xmd:max-w-[461px] max-md:max-w-[244px] max-635px:text-[12px] max-xmd:leading-[120%] max-sm:max-w-[158px] max-635px:hidden">
+            <p className="text-[#8490A1] font-raleway hidden max-md:block w-screen text-right leading-[28px] max-md:text-[15px] max-xmd:leading-[150%] max-md:max-w-[244px] max-635px:text-[12px] max-635px:hidden">
               We’ve designed and curated pieces that are a cut above your
               average home goods, because when you level up
             </p>
-            <p className="text-[#8490A1] font-raleway max-w-[581px] hidden w-screen text-[24px] text-right leading-[28px] max-xmd:text-[16px] max-md:text-[15px] max-xmd:leading-[150%] max-xmd:max-w-[461px] max-md:max-w-[244px] max-635px:text-[12px] max-xmd:leading-[120%] max-635px:max-w-[158px] max-635px:block">
+            <p className="text-[#8490A1] font-raleway hidden w-full text-[24px] text-right max-635px:text-[12px] max-sm:leading-[120%] max-635px:w-[158px] max-635px:block">
               Our innovative finishes, from polished plasters to limewash,
               combine luxury and sustainability,
             </p>
@@ -71,7 +69,7 @@ const CraftsSection = () => {
               >
                 {/* Flex container for centering the button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="max-w-[225px] max-md:max-w-[150px] w-full h-[63px] border-white/50 border-2 bg-white/5 text-white text-[20px] rounded-full flex items-center justify-center shadow-lg backdrop-blur-md transition max-635px:h-[33px] max-sm:w-[120px] max-635px:text-[12px] font-raleway">
+                  <button className="max-w-[225px] max-md:text-[15px] max-md:max-w-[167px] max-md:h-[47px] w-full h-[63px] border-white/50 border-2 bg-white/5 text-white text-[20px] rounded-full flex items-center justify-center shadow-lg backdrop-blur-md transition max-635px:h-[33px] max-sm:w-[120px] max-635px:text-[12px] font-raleway">
                     Show More
                     <span className="w-[57px] max-md:w-[35px] h-[1px] ml-3 bg-white inline-block relative max-sm:w-[28px]">
                       <span className="absolute right-0 top-[-3px] border-t-[2px] border-r-[2px] border-white w-2 h-2 rotate-45"></span>

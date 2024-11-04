@@ -20,7 +20,7 @@ const Certifications = () => {
             <div className="text-[#FFFFFF] text-[40px] leading-[32px] font-playfair max-md:text-[24px] max-sm:text-[16px]">
               ISO 14001:2015 Certified
             </div>
-            <div className="font-raleway text-[20px] max-sm:w-[210px] leading-[32px] text-[#807E6D] max-md:text-[14px] max-sm:leading-[120%] max-md:leading-[16.8px]">
+            <div className="font-raleway text-[20px] max-sm:max-w-[210px] leading-[32px] text-[#807E6D] max-md:text-[14px] max-sm:leading-[120%] max-md:leading-[16.8px]">
               The ISO 14001 standard helps businesses to recognise and control
               their environmental impact
             </div>

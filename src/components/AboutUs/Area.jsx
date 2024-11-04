@@ -36,12 +36,8 @@ const Area = () => {
     setExpandedId(expandedId === id ? null : id);
   };
   return (
-    // <section className=" flex justify-center w-full">
     <section className="flex items-center w-full px-[72px] max-sm:px-[31px] py-[100px]">
-      {/* <div className=" flex items-center gap-[95px] bg-red-900 py-[95px] px-[81px] max-md:w-[685px] justify-center max-md:gap-[35px] max-md:px-[40px]"> */}
       <div className=" flex items-center w-full gap-[34px] max-sm:gap-[32px] max-md:flex-col ">
-        {/* Left Side - Form Section */}
-        {/* <div className="w-[644px] h-[595px] space-y-[23px]"> */}
         <div className="max-w-[644px] flex  flex-col gap-[54px] w-full max-sm:gap-[32px] max-h-[595px] h-full ">
             <div className="flex flex-col gap-[26px]">
           <div className="flex items-center">
@@ -69,17 +65,17 @@ const Area = () => {
           </button>
         </div>
 
-        {/* Right Side - Image Section */}
         <div className=" flex flex-col max-w-[50%] max-md:max-w-[585px] w-full gap-[20px] ">
           {materials.map((material, index) => (
             <div
               key={material.id}
-              className="border-b-2  px-[21px] max-h-[162px] border-[#8FA49E]  py-[13px]"
+              className="border-b-2  px-[21px] max-h-[162px] cursor-pointer border-[#8FA49E]  py-[13px]"
+              onClick={() => toggleExpand(material.id)}
             >
               <div className="flex justify-between items-center text-[#214A3E] font-raleway text-[24px] leading-[120%] max-sm:text-[16px] ">
                 0{index + 1} {material.title}
                 <div
-                  onClick={() => toggleExpand(material.id)}
+                  // onClick={() => toggleExpand(material.id)}
                   className="w-[36px] cursor-pointer rounded-[18px] h-[36px] flex justify-center items-center bg-[#DCDFE3]"
                 >
                   <img

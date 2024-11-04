@@ -2,12 +2,8 @@ import React from "react";
 import image from "../../assets/HomePage/rectangle-47.png";
 const ContactUs = () => {
   return (
-    // <section className=" flex justify-center w-full">
     <section className="flex justify-center items-center w-full">
-      {/* <div className=" flex items-center gap-[95px] bg-red-900 py-[95px] px-[81px] max-md:w-[685px] justify-center max-md:gap-[35px] max-md:px-[40px]"> */}
       <div className=" flex items-center gap-[95px] py-[95px] px-[81px] max-md:w-[685px] justify-center max-xmd:gap-[49px] max-md:gap-[35px] max-md:px-[0px]">
-        {/* Left Side - Form Section */}
-        {/* <div className="w-[644px] h-[595px] space-y-[23px]"> */}
         <div className="max-w-[644px] w-full max-h-[595px] h-full space-y-[23px] max-md:w-[341px] max-md:h-[532px]">
           <div className="flex items-center mb-4">
             <div className="w-[64px] h-[2px] bg-[#8FA49E] max-md:w-[32px]"></div>
