@@ -1,3 +1,4 @@
+import React from "react";
 import instagram from "../../assets/Product/instagram.png";
 import image1 from "../../assets/Product/image11.png";
 import image2 from "../../assets/Product/image22.png";
