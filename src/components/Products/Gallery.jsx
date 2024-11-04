@@ -1,9 +1,9 @@
 import React from "react";
 import instagram from "../../assets/Product/instagram.png";
-import image1 from "../../assets/Product/image11.png";
-import image2 from "../../assets/Product/image22.png";
+import image1 from "../../assets/Product/Image11.png";
+import image2 from "../../assets/Product/Image22.png";
 import image3 from "../../assets/Product/image33.png";
-import image4 from "../../assets/Product/image44.png";
+import image4 from "../../assets/Product/Image44.png";
 const Gallery = () => {
   return (
     <div className="bg-[#F8F8F8] flex justify-center items-center w-full h-[739px]  max-sm:h-screen">
