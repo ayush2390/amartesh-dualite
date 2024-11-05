@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
       <HeroSection />
       <ContactForm />
-      {/* <Services /> */}
+      <Services />
     </div>
   );
 };

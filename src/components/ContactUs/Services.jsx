@@ -6,9 +6,10 @@ import image4 from "../../assets/Contact/services4.png";
 
 const Services = () => {
   return (
-    <div className=" flex bg-[#E5EDE4] w-full h-[270px] max-sm:h-[621px] max-md:h-[316px] items-center justify-center">
-      <div className="w-[92.64%]  max-sm:h-[473px] max-sm:gap-[38px] max-md:w-[78.31%] max-sm:w-[338px] flex justify-between items-center max-md:h-[217px] max-sm:flex-col">
-        <div className="flex   w-[52.47%] max-sm:h-[50%] max-md:w-[52.32%] h-full max-sm:w-full justify-between max-md:flex-col">
+    <div className=" flex bg-[#E5EDE4] w-full h-[270px] max-sm:h-[621px] max-md:h-[316px] max-md:px-4 items-center justify-center">
+      <div className="w-[92.64%] max-sm:h-[473px] max-sm:gap-[38px] max-md:w-[602px] max-sm:w-[338px] flex justify-between items-center max-md:h-[217px] max-sm:flex-col">
+        <div className="flex   w-[700px] max-sm:h-[50%] max-md:w-[52.32%] h-full max-sm:w-full justify-between max-md:flex-col">
+        {/* <div className="flex   w-[52.47%] max-sm:h-[50%] max-md:w-[52.32%] h-full max-sm:w-full justify-between max-md:flex-col"> */}
           <div className="flex items-center  gap-[10px]">
             <div className="w-[60px] h-[60px]">
               <img src={image1} className="w-full h-full" />
@@ -36,7 +37,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="flex h-full justify-between w-[41.54%] max-sm:h-[50%]  max-sm:w-full max-md:w-[40.7%]  max-md:flex-col">
+        {/* <div className="flex h-full justify-between w-[41.54%] max-sm:h-[50%]  max-sm:w-full max-md:w-[40.7%]  max-md:flex-col"> */}
+        <div className="flex h-full justify-between w-[554px] max-sm:h-[50%]  max-sm:w-full max-md:w-[40.7%]  max-md:flex-col">
           <div className="flex items-center gap-[10px] ">
             <div className="w-[60px] h-[60px]">
               <img src={image3} className="w-full h-full" />
