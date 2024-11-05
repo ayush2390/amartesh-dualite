@@ -58,7 +58,7 @@ const Collection = () => {
           </div>
           <div
             className={`relative flex-shrink ${
-              hovered === "second" ? "w-[50%]" : "w-[25%] bg-red-400 h-full"
+              hovered === "second" ? "w-[50%]" : "w-[25%] h-full"
             } transform transition-width rounded-[20px] duration-700 ease-out`}
             onMouseEnter={() => setHovered("second")}
             onMouseLeave={() => setHovered(null)}
@@ -77,7 +77,7 @@ const Collection = () => {
           </div>
           <div
             className={`relative flex-shrink ${
-              hovered === "third" ? "w-[50%]" : "w-[25%] bg-red-400 h-full"
+              hovered === "third" ? "w-[50%]" : "w-[25%] h-full"
             } transform transition-width rounded-[20px] duration-700 ease-out`}
             onMouseEnter={() => setHovered("third")}
             onMouseLeave={() => setHovered(null)}
